@@ -1,0 +1,258 @@
+/* Navbar */
+.header-container {
+  position: fixed !important;
+  top: 0;
+  z-index: 9999999;
+  display: flex;
+  background: black;
+  flex-direction: row;
+  padding: 1.2rem;
+  align-items: center;
+  box-shadow: 2px 2px 4px green;
+  justify-content: space-between;
+  width: 100%;
+  height: 9vh;
+}
+
+.navbar-collapse {
+  background-color: black !important;
+  width: 100vw !important;
+}
+
+.header-container .logo {
+  font-size: 1.6rem;
+  cursor: pointer;
+  font-family: "Do Hyeon", sans-serif;
+  color: green;
+}
+
+.logo img {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 0.5rem;
+}
+
+.anchor {
+  margin: 1rem;
+  /* color: rgba(224, 210, 210, 0.87) !important; */
+  color: green !important;
+  cursor: pointer;
+}
+
+.anchor:hover,
+.anchor:active,
+.anchor.active {
+  color: white;
+  padding-bottom: 0.25rem;
+  border-bottom: 4px solid green;
+}
+
+.active {
+  color: white !important;
+}
+
+@media screen and (max-width: 3000px) {
+  .content {
+    position: absolute;
+    width: 50%;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    /* color: white; */
+    /* margin-left: 20rem;
+    margin-top: 15rem;
+    margin-right: 20rem;
+    margin-bottom: 20rem; */
+    margin: 20rem 40rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .content {
+    position: absolute;
+    width: 50%;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    color: red;
+    /* margin-left: 20rem;
+    margin-top: 15rem;
+    margin-right: 20rem;
+    margin-bottom: 20rem; */
+    margin: 20rem 20rem;
+  }
+
+  /* Navbar */
+  .header {
+    padding: 1rem;
+    height: 9vh;
+  }
+
+  .navbar-nav {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .header-container .logo {
+    font-size: 1.3rem;
+  }
+
+  .logo img {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  .anchor {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 312px) {
+  .header {
+    flex-direction: column;
+  }
+  .logo img {
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-right: 0.5rem;
+    padding-right: 0rem !important;
+  }
+  .navbar-brand {
+    display: block !important;
+    padding-right: 0rem !important;
+    margin-right: 0rem !important;
+  }
+}
+
+.header {
+  /* width: 100%;
+  height: 5rem;
+  background-color: #044599;
+  padding: 0 10%; */
+
+  position: fixed !important;
+  top: 0;
+  z-index: 9999999;
+  display: flex;
+  background: transparent;
+  flex-direction: row;
+  padding: 0.5rem;
+  align-items: center;
+  /* box-shadow: 2px 2px 4px rgb(32, 196, 17); */
+  justify-content: space-between;
+  width: 100%;
+  height: 9vh;
+}
+.header .logo {
+  display: inline-flex;
+  font-size: 1.6rem;
+  cursor: pointer;
+  align-items: center;
+  font-family: "Do Hyeon", sans-serif;
+  /* color: rgb(32, 196, 17); */
+  color: white;
+}
+
+.logo img {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 0.5rem;
+}
+
+.header nav {
+  height: 100%;
+}
+
+.header ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.header li {
+  margin: 0 1rem;
+  width: 5rem;
+}
+
+.header a {
+  /* color: rgb(32, 196, 17); */
+  color: white;
+  text-decoration: none;
+}
+.active {
+  color: rgb(239, 247, 241) !important;
+}
+
+.header a:hover,
+.header a:active,
+.header a.active {
+  /* color: #95bcf0;
+  padding-bottom: 0.25rem;
+  border-bottom: 4px solid #95bcf0; */
+
+  color: rgb(183, 206, 181);
+  padding-bottom: 0.25rem;
+  /* border-bottom: 2px solid rgb(32, 196, 17); */
+  border-bottom: 2px solid rgb(183, 206, 181);
+}
+.main {
+  width: auto;
+  height: auto;
+  text-align: center;
+  background-image: url("../Assets/images/sky-lg.jpg");
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  top: 0;
+  left: 0;
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content {
+  position: absolute;
+  width: 50%;
+  max-height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /* margin-left: 20rem;
+  margin-top: 15rem;
+  margin-right: 20rem;
+  margin-bottom: 20rem; */
+  margin: 20rem 20rem;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}

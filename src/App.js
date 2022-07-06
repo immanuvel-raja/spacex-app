@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import HomePage from "./components/HomePage";
+import { Redirect, Route, Switch } from "react-router-dom";
+import Rockets from "./Pages/Rockets";
+import Launches from "./Pages/Launches";
+import LaunchDetail from "./Pages/LaunchDetail";
+import RocketDetails from "./Pages/RocketDetails";
+import Layout from "./Layout/Layout";
+import NotFound from "./Pages/NotFound";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Switch>
+        <Route path="/" exact>
+          <Redirect to="/home" />
+        </Route>
+        <Route path="/home">
+          <HomePage />
+        </Route>
+        <Route path="/rockets" exact>
+          <Rockets />
+        </Route>
+        <Route path="/launches" exact>
+          <Launches />
+        </Route>
+        <Route path="/rockets/:productId">
+          <RocketDetails />
+        </Route>
+        <Route path="/launches/:productId">
+          <LaunchDetail />
+        </Route>
+        <Route path="*">
+          <NotFound />
+        </Route>
+      </Switch>
+    </Layout>
   );
 }
 

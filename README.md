@@ -14,11 +14,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -27,44 +22,40 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+due to the time constraint i haven't deployed but we can deploy it any time.i have been using netlify for most of my projects
 
-### `npm run eject`
+### `frameworks`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+As mentioned on the mail, i haven't used any third party libraries.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+simply used react-router-dom and for the styling i have used styled components coded by me not any other css frameworks
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### `Architecture`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+for the navigation created a separate components so we can reuse them called MainHeader.js
 
-## Learn More
+for routing between pages created a separate folder called pages and coded all the routing components there.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+for the detailed pages of rockets and launches tab created a components under components folder
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+used fetch api for getting data from api
 
-### Code Splitting
+used async function to retrieve the promises easily.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+pushed those data into an new array and mapped that array based on the key then send that new array as a prop to different component.
 
-### Analyzing the Bundle Size
+becausue of clean coding i have been used separate component for rendering list data
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+same procedure repeated for the launches tab
 
-### Making a Progressive Web App
+haven't used most of the styling and modern design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+as you know already this is my first test so i have completed my side of work
 
-### Advanced Configuration
+### `how can we improve`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+in the homepage, we can put a button if we click that then it will redirect to particular news or article page.
 
-### Deployment
+in the rocket tab,we can list all the items as a card same goes for the detailed page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+......................................................................................
